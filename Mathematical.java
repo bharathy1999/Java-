@@ -48,6 +48,9 @@ public class Main
 	public static void main(String[] args) {
 		String a="(10+4/5+6+12)";
 		boolean v=isValid(a);
-		System.out.print(v);
+		if(v)
+		System.out.print(a+"expression is valid");
+		else
+		System.out.print(a+"expression is not valid");	
 	}
 }
