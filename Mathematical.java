@@ -21,7 +21,7 @@ public class Main
                       }
            }
             if(bl!=br){
-               a= false;
+               return false;
            }
          String st=str.replace("+","*").replace("-","*").replace("/","*").replace("%","*").replace("x","*");
          if(st.charAt(0)=='*'||st.charAt(st.length()-1)=='*'){
@@ -36,8 +36,7 @@ public class Main
                  a=true;
                  }
                  else{
-                 a=false;
-                 break;
+                 return false;
              }
              }
              
